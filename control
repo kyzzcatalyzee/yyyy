@@ -1,0 +1,9 @@
+Package: com.zilvyn.depthwall
+Name: DepthWall
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Depth effect for the lock screen clock on devices without it (iOS 16, roothide compatible)
+Maintainer: zilvyn
+Author: zilvyn
+Section: Tweaks
