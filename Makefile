@@ -6,7 +6,7 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = DepthWall
 DepthWall_FILES = Tweak.xm
-DepthWall_CFLAGS = -fobjc-arc
+DepthWall_CFLAGS = -fobjc-arc -Wno-unguarded-availability-new
 DepthWall_FRAMEWORKS = UIKit Vision CoreImage CoreVideo CoreGraphics
 
 include $(THEOS_MAKE_PATH)/tweak.mk

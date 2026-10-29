@@ -38,6 +38,7 @@ static NSDate *DWMod(NSString *p) {
 }
 
 static UIImage *DWBuildCutout(void) {
+    if (@available(iOS 15.0, *)) {} else { DWLog(@"iOS 15+ required"); return nil; }
     UIImage *raw = [UIImage imageWithContentsOfFile:DW_SRC];
     if (!raw) { DWLog(@"no wallpaper at %@", DW_SRC); return nil; }
 
